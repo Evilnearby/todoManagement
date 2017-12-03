@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [13/Nov/2017:19:30:24 -0500] "GET /spring-mvc/login HTTP/1.1" 404 1011 http-bio-8080-exec-1 49
+0:0:0:0:0:0:0:1 - - [13/Nov/2017:19:30:24 -0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [13/Nov/2017:19:31:25 -0500] "GET /spring-mvc/login HTTP/1.1" 200 758 http-bio-8080-exec-5 63
