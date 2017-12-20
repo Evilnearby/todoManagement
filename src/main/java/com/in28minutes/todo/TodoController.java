@@ -70,7 +70,7 @@ public class TodoController {
 		if (result.hasErrors()) {
 			return "todo";
 		}
-		service.addTodo(retrieveLoggedinUserName(), todo.getDesc(), new Date(), false);
+		service.addTodo(retrieveLoggedinUserName(), todo.getDesc(), todo.getTargetDate(), false);
 		//model.clear(); question: Why we do this?
 		return "redirect:list-todos";
 	}

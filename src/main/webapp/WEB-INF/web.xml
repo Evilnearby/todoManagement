@@ -8,8 +8,8 @@
 	<servlet>
 	  <servlet-name>dispatcher</servlet-name>
 	  <servlet-class>
-	           org.springframework.web.servlet.DispatcherServlet
-	       </servlet-class>
+           org.springframework.web.servlet.DispatcherServlet
+       </servlet-class>
 	  <init-param>
 	    <param-name>contextConfigLocation</param-name>
 	    <param-value>/WEB-INF/todo-servlet.xml</param-value>
@@ -24,12 +24,17 @@
   
   
 	<filter>
-	 		<filter-name>springSecurityFilterChain</filter-name>
-	 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+ 		<filter-name>springSecurityFilterChain</filter-name>
+ 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
 	
 	<filter-mapping>
-			<filter-name>springSecurityFilterChain</filter-name>
-	 		<url-pattern>/*</url-pattern>
-	</filter-mapping> 
+		<filter-name>springSecurityFilterChain</filter-name>
+ 		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	 
+	<error-page>
+	    <location>/WEB-INF/views/error.jsp</location>
+	</error-page>
+	
 </web-app>
